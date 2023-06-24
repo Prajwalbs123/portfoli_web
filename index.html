@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- linking both css and js files-->
+    <link rel="stylesheet" href="profile.css">
+
+    <!-- boxicon.com -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Profile</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+    <!-- NAVIGATION BAR -->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Prajwal</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Currently studying Information Science at National Institue Of Engineering</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/prajwal-b-s-877a40202"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="al" onclick="ale()"><i class='bx bxs-contact' ></i></a>
+                <a href="mailto:prajwalshirshard@gmail.com"><i class='bx bxl-gmail' ></i></a>
+                <a href="https://github.com/Prajwalbs123"><i class='bx bxl-github' ></i></a>
+            </div> 
+            <a href="https://drive.google.com/file/d/12Cl60D4Sv3Zi-Up3frSXo4v8TYbJ4PIv/view?usp=sharing" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="profilepic.png">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+         <div class="about-img">
+            <div >
+                <img src="LC.png">
+                <h2>Solved 200+ DSA Problems in LC</h2>
+                <a href="https://leetcode.com/prajwalshirshyad/" class="btn_abt">Leetcode</a>
+            </div>
+            <div>
+                <img src="GFG.jpg">
+                <h2>Solved 100+ DSA Problems in GFG</h2>
+                <a href="https://auth.geeksforgeeks.org/user/prajwalshirshyad/practice" class="btn_abt">geeksforgeeks</a>
+            </div> 
+        </div> 
+        <div class="about-content">
+            <h3 class="heading">About <span>Me</span></h3>
+            <h2>Programmer</h2>
+            <p>My name is Prajwal, and I am currently pursuing a BE degree in Information Science Engineering at The National Institute Of Engineering college. Through completing multiple projects and solving DSA problems, I have gained extensive knowledge in programming and its uses in the IT industry. I am now looking for opportunities in the IT sector to gain hands-on experience and apply the theoretical knowledge I have acquired throughout my college years.<br />
+                During my studies, I successfully completed my college courses, an NPTEL course titled "Joy of Computing using Python," and solved multiple DSA problems on LeetCode and GeeksForGeeks.<br />
+                In my leisure time, I enjoy playing cricket, watching educational videos on YouTube, and reading about the latest developments in technology across various fields. I strongly believe that consistency and growth go hand-in-hand, so I strive to maintain a consistent work ethic.</p>
+            <a href="#" class="btn_abt">Read More</a>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <h2 class="trail">Projects Available on  <a href="https://github.com/Prajwalbs123" class="btn_pj">GitHub</a></h2>
+        <div class="projects-container">
+            
+            <div class="projects-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>Personal Portfolio Website. Web Technologies such as:</p>
+                <p><span class="web"></span></p>
+                <p>are used in this project. objective of working on this project was to learn frontend Web Development.</p>
+                <img src="Sreenshot.png" style="width: 90%">
+            </div>
+            
+            <div class="projects-box">
+                <i class='bx bxl-java'></i>
+                <h3>OOP-Java</h3>
+                <p>The aim of working on this project was to learn about object oriented programming. This is a basic core java object oriented project operating on terminal.</p><p style="color: rgb(74, 74, 74);">Using: </p>
+                <p><span class="java"  style="color: rgb(74, 74, 74);"></span></p>
+                <img src="JavaProjectOutput.png" style="width: 90%">
+            </div>
+
+            <div class="projects-box">
+                <i class='bx bxs-data'></i>
+                <h3>Database-MySQL</h3>
+                <p>This is a basic database project using Mysql. It is a hospital database and it consists of</p><p><span class="tables" style="color: rgb(74, 74, 74);"></span></p>
+                <p>data from database can be easily retrieved using SQL queries in command prompt. Documentation using Schema and ER diagram</p>
+                <img src="patient_record.png" style="width: 90%">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>   
+
+        <form action="/" method="post" >
+            <div class="input-box">
+                 <input name="firstname" type="text" placeholder="Full Name">
+                 <input name="email" type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input name="phone" type="number" placeholder="Mobile Number">
+                <input name="e-sub" type="text" placeholder="Email Subject">
+            </div>
+
+            <div>
+                <textarea name="yourmess" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2022 by Prajwal | All Rights Reserved.</p>
+        </div>
+        
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bxs-home'></i></a>
+        </div>
+    </footer>
+    
+    
+    <!-- CDN LINKS -->
+    <!-- scrollrevealjs -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Typedjs (github) -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    
+    <!-- Main JS -->
+    <script src="profile.js" type="text/javascript"></script>
+</body>
+ 
+</html>
